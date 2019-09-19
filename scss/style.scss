@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+@import 'foundation/_reset.scss';
+@import 'foundation/_base.scss';
+@import 'layout/_header.scss';
+@import 'layout/_main.scss';
+@import 'layout/_footer.scss';
+@import 'object/_btn.scss';
+@import 'object/_introductions.scss';
+@import 'object/_portfolio.scss';
+@import 'object/_contact.scss';
+@import 'object/_namearea.scss';
+@import 'object/_skill.scss';
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+*{
+  font-family: 'Sawarabi Gothic', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}

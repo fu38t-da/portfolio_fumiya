@@ -1,0 +1,106 @@
+.about-container {
+  position: relative;
+  overflow: hidden;
+  margin: 10% 0;
+  padding: 80px 0;
+  height: 130vh;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 80%;
+    margin: 3% -10% 0;
+    background: #240461;
+    transform-origin: left center;
+    transform: rotate(4deg);
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 85%;
+    margin: 3% -10% 0;
+    background: #e6d6d6;
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    z-index: -2;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 10px;
+    color: #e6d6d6;
+    text-align: center;
+    overflow: scroll;
+
+    &--title {
+      position: relative;
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 5px;
+      padding-bottom: 5%;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        width: 100px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: #ccc;
+      }
+    }
+
+    &--content {
+      letter-spacing: 3px;
+      line-height: 3.3;
+      font-size: 12px;
+      padding-top: 5%;
+    }
+  }
+}
+
+// メディアクエリ 768px以下
+@media screen and (max-width: 768px) {
+  .about-container {
+    height: 100vh;
+    &__inner {
+
+      &--content {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// メディアクエリSP 414以下
+@media screen and (max-width: 414px) {
+  .about-container {
+    height: 100vh;
+
+    &__inner {
+      padding: 0px 10px 30px;
+
+      &--content {
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

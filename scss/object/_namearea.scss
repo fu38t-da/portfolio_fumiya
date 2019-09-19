@@ -1,0 +1,130 @@
+.header-wrapper {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.namecontainer {
+  padding: 24% 30px 10px;
+  overflow: hidden;
+  position: relative;
+
+  .maintitle {
+    font-family: 'Anton', sans-serif;
+    font-size: 12.5vw;
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    top: -2.3vw;
+    right: -1vw;
+    white-space: nowrap;
+  }
+
+  .profeelimg{
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    background: url(../img/IMG_3890.jpg) no-repeat left;
+    background-size: cover;
+    object-fit: contain;
+    width: 60%;
+    height: 60%;
+    z-index: -1;
+  }
+
+  .bg-beige{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% + 10%);
+    width: calc(50% + 5%);
+    background-color: #f2ede9;
+    z-index: -2;
+  }
+  .keyword{
+    font-size: 18vh;
+    font-family: 'Anton', sans-serif;
+    color: rgba(#535252, .1);
+    white-space: nowrap;
+    letter-spacing: 30px;
+     -webkit-text-stroke: 1px #f2ede9;
+    padding: 0 0 10% 45%;
+    margin-bottom: 50px;
+  }
+
+  .menu{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    padding: 10px 20px;
+    transform: rotate(-90deg);
+    background-color: #240461;
+    color: #fff;
+    letter-spacing: 3px;
+    }
+
+  .menu-contents{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    padding: 10px;
+
+    .menu-content{
+      font-size: 20px;
+      letter-spacing: 3px;
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(#240461,.1);
+      }
+
+      .line {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+// メディアクエリ 768px以下
+@media screen and (max-width: 768px) {
+  .header-wrapper {
+    height: 50vh;
+
+    .namecontainer {
+
+      .maintitle {
+        font-size: 15vw;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .menu-contents {
+        display: none;
+      }
+
+      .keyword {
+        font-size: 8vh;
+        letter-spacing: 1rem;
+      }
+    }
+  }
+}
+
+// メディアクエリSP 414以下
+@media screen and (max-width: 414px) {
+  .header-wrapper {
+    height: 40vh;
+
+    .namecontainer {
+
+      .keyword {
+        font-size: 6vh;
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+
+}

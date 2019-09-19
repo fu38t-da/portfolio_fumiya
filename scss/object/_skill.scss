@@ -1,0 +1,59 @@
+.skill-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  padding-bottom: 5%;
+
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #535252;
+  }
+}
+
+.skill-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &--content {
+    width: calc(33.33% - 40px / 3 );
+    text-align: center;
+    margin-bottom: 15%;
+
+    &__icon {
+      font-size: 5rem;
+    }
+
+    &--title {
+      padding-top: 7%;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+// メディアクエリSP 414以下
+@media screen and (max-width: 414px) {
+  .skill-container {
+    margin: 0 5%;
+
+    &--content {
+
+      &--title {
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

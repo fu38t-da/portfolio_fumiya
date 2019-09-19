@@ -1,0 +1,65 @@
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #22201f;
+  height: 50vh;
+  letter-spacing: 2px;
+
+  &--left {
+    width: 50%;
+    text-align: center;
+  }
+
+  &--right {
+    width: 50%;
+    padding-left: 10%;
+  }
+
+  .sns {
+    color: #4e4d4c;
+    display: flex;
+
+    span {
+      padding-left: 5px;
+    }
+
+    .sns-icon {
+      display: inline-block;
+      margin-left: 8px;
+
+      &:hover{
+        color: rgba( #fff, .7);
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+// メディアクエリ 768px以下
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    height: 30vh;
+  }
+}
+
+// メディアクエリSP 414以下
+@media screen and (max-width: 414px) {
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+
+    &--left {
+      width: 100%;
+    }
+    &--right {
+      width: 100%;
+      padding: 0;
+      margin-top: 10%;
+      justify-content: center;
+    }
+  }
+}

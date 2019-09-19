@@ -1,0 +1,51 @@
+.contact-container {
+  max-width: 900px;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+
+  &--title {
+    position: relative;
+    font-size: 2rem;
+    padding-bottom: 5%;
+    letter-spacing: 5px;
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      width: 100px;
+      height: 1px;
+      margin: 0 auto;
+      background-color: #535252;
+    }
+  }
+
+  &--text {
+    letter-spacing: 3px;
+    line-height: 3.3;
+    font-size: 12px;
+    padding-top: 5%;
+  }
+}
+
+// メディアクエリ 768px以下
+@media screen and (max-width: 768px) {
+  .contact-container {
+    height: 70vh;
+  }
+}
+
+// メディアクエリSP 414以下
+@media screen and (max-width: 414px) {
+  .contact-container {
+
+    &--text {
+      letter-spacing: 2px;
+    }
+  }
+}
