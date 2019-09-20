@@ -42,14 +42,27 @@
     z-index: -2;
   }
   .keyword{
-    font-size: 18vh;
+    font-size: 10vw;
     font-family: 'Anton', sans-serif;
-    color: rgba(#535252, .1);
+    color: rgba(#fff, .5);
     white-space: nowrap;
-    letter-spacing: 30px;
-     -webkit-text-stroke: 1px #f2ede9;
+    letter-spacing: 25px;
+    //  -webkit-text-stroke: 1px #f2ede9;
     padding: 0 0 10% 45%;
     margin-bottom: 50px;
+    margin-right: 10px;
+    position: relative;
+
+    &::before {
+      content:attr(data-inverted);
+      overflow:hidden;
+      position:absolute;
+      left:0;
+      top:0;
+      width: 16%;
+      color: rgba(#000, .5);
+      padding: 0 0 10% 45%;
+    }
   }
 
   .menu{
