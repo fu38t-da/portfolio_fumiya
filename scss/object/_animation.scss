@@ -1,0 +1,11 @@
+.fade_off {
+  opacity: 0;
+  transition: 1.5s;
+  transform: translateY(50px);
+}
+
+.fade_on {
+  opacity: 1;
+  transition: 1.5s;
+  transform: translateY(0px);
+}

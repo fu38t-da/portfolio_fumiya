@@ -3,7 +3,7 @@
   overflow: hidden;
   margin: 10% 0;
   padding: 80px 0;
-  height: 130vh;
+  height: 200vh;
 
   &:before {
     content: '';
@@ -60,6 +60,140 @@
         height: 1px;
         margin: 0 auto;
         background-color: #535252;
+      }
+    }
+  }
+
+  &--flexwrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+    &__contents {
+      width: calc(33.33% - 40px / 3);
+      background-color: #f9f9f9;
+      text-align: center;
+      margin-bottom: 5%;
+      padding-bottom: 5%;
+      transition: transform .3s linear;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 8px 3px #ccc inset;
+      }
+
+      &__img {
+
+        img {
+          display: block;
+          width: 100%;
+          padding: 5%;
+        }
+      }
+      &__title {
+        position: relative;
+        font-size: 12px;
+        letter-spacing: 3px;
+        line-height: 3.3;
+        color: #535252;
+        text-decoration: none;
+        margin-bottom: 5%;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 3%;
+          right: 0;
+          left: 0;
+          width: 50%;
+          height: 1px;
+          margin: 0 auto;
+          background-color: #535252;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 3%;
+          right: 0;
+          left: 0;
+          width: 50%;
+          height: 1px;
+          margin: 0 auto;
+          background-color: #535252;
+        }
+      }
+
+      &__text {
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: #535252;
+        text-decoration: none;
+        line-height: 2.2;
+      }
+    }
+  }
+}
+
+
+// メディアクエリ 768px以下
+@media screen and (max-width: 768px) {
+  .portfolio-container {
+    height: 200vh;
+
+    &__inner {
+      padding: 50px 7%;
+
+      &--title {
+        position: relative;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        padding-bottom: 5%;
+      }
+    }
+
+    &--flexwrapper {
+
+      &__contents {
+        width: calc(50% - 20px / 2);
+      }
+    }
+  }
+}
+
+// メディアクエリSP 414以下
+@media screen and (max-width: 414px) {
+ .portfolio-container {
+    height: 370vh;
+    margin: 10% 0 ;
+    padding: 80px 0 0;
+
+    &:before {
+      width: 200%;
+      height: 97%;
+      margin: 3% -30% 0;
+    }
+
+    &:after {
+      width: 200%;
+      height: 98%;
+      margin: 3% -30% 0;
+    }
+
+    &__inner {
+      padding: 30px 10%;
+    }
+
+    &--flexwrapper {
+
+      &__contents {
+          width: 100%;
+
+          &:first-child {
+            margin-top: 10%
+          }
       }
     }
   }

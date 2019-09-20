@@ -50,6 +50,11 @@
     margin: 0 5%;
 
     &--content {
+      padding-top: 10%;
+
+      &__icon {
+        font-size: 4rem;
+      }
 
       &--title {
         letter-spacing: 2px;

@@ -21,9 +21,18 @@
       <div class="bg-beige"></div>
       <p class="menu">menu</p>
       <ul class="menu-contents">
-        <li class="menu-content"><span class="line">-</span>about</li>
-        <li class="menu-content"><span class="line">-</span>skill</li>
-        <li class="menu-content"><span class="line">-</span>portfolio</li>
+        <a href="#About">
+          <li class="menu-content">about</li>
+        </a>
+        <a href="#Skills">
+          <li class="menu-content">skills</li>
+        </a>
+        <a href="#Portfolios">
+          <li class="menu-content">portfolios</li>
+        </a>
+        <a href="#Contact">
+          <li class="menu-content">contact</li>
+        </a>
       </ul>
     </div>
   </header>
@@ -31,17 +40,17 @@
   <main>
     <!-- about me -->
     <section class="about-container">
-      <div class="about-container__inner">
+      <div class="about-container__inner" id="About">
         <h2 class="about-container__inner--title">About me</h2>
-        <p class="about-container__inner--content">前職でリアルイベントの企画・立案・ディレクションを担当<br>多分野のメーカー様のプロモーションの支援を行う<br>その中でWEB領域に興味を持ち<br>今まで培ったスキルとWEBを掛け合わせた仕事が出来ないかを考え<br>最初にプログラミングを学ぼうと思い<br>NEXSEEDにて3ヶ月フロント周りのプログラミングの基礎を学習<br>今後はそれらのスキルを元に企業のマーケティング支援<br>WEB領域のPM（プロジェクトマネージメント）をできればと考えています<br>お客様とエンジニアの間に立ち円滑にプロジェクトを完遂出来るように<br>努めていきたいと考えています</p>
+        <p class="about-container__inner--content fade_off" id="about">前職でリアルイベントの企画・立案・ディレクションを担当<br>多分野のメーカー様のプロモーションの支援を行う<br>その中でWEB領域に興味を持ち<br>今まで培ったスキルとWEBを掛け合わせた仕事が出来ないかを考え<br>最初にプログラミングを学ぼうと思い<br>NEXSEEDにて3ヶ月フロント周りのプログラミングの基礎を学習<br>今後はそれらのスキルを元に企業のマーケティング支援<br>WEB領域のPM（プロジェクトマネージメント）をできればと考えています<br>お客様とエンジニアの間に立ち円滑にプロジェクトを完遂出来るように<br>努めていきたいと考えています</p>
       </div>
     </section>
     <!--/ about me -->
 
     <!-- skill -->
-    <section class="skill">
+    <section class="skill" id="Skills">
       <h2 class="skill-title">Skills</h2>
-      <div class="skill-container">
+      <div class="skill-container fade_off" id="skills">
         <div class="skill-container--content">
           <i class="fab fa-html5 skill-container--content__icon"></i>
           <p class="skill-container--content--title">HTML</p>
@@ -92,37 +101,145 @@
 
     <!-- portfolio -->
     <section class="portfolio-container">
-      <div class="portfolio-container__inner">
-        <h2 class="portfolio-container__inner--title">Portfolios</h2>
-        <div class="portfolio-container--flexwrapper">
+      <div class="portfolio-container__inner" id="Portfolios">
+        <h2 class="portfolio-container__inner--title ">Portfolios</h2>
+        <div class="portfolio-container--flexwrapper fade_off" id="portfolios">
           <div class="portfolio-container--flexwrapper__contents">
-            <div class="portfolio-container--flexwrapper__contents__img"></div>
-            <p class="portfolio-container--flexwrapper__contents__text"></p>
+            <a href="">
+              <div class="portfolio-container--flexwrapper__contents__img">
+                <img src="assets/img/ojt_wordpress2.png" alt="wordpressサイト共同OJT">
+              </div>
+              <h3 class="portfolio-container--flexwrapper__contents__title">OJT共同制作</h3>
+              <ul>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  レスポンシブ対応
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  CMSを使用したOJT（WordPress）
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  言語：HTML / CSS / JavaScript / jQuery / PHP
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  担当：HTML / CSS / JavaScript / jQuery
+                </li>
+              </ul>
+            </a>
           </div>
 
           <div class="portfolio-container--flexwrapper__contents">
-            <div class="portfolio-container--flexwrapper__contents__img"></div>
-            <p class="portfolio-container--flexwrapper__contents__text"></p>
+            <a href="">
+              <div class="portfolio-container--flexwrapper__contents__img">
+                <img src="assets/img/assignment_wordpress.png" alt="wordpressサイト">
+              </div>
+              <h3 class="portfolio-container--flexwrapper__contents__title">My theme制作</h3>
+              <ul>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  レスポンシブ対応
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  CMSを使用したMy theme作成（WordPress）
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  言語：HTML / CSS / JavaScript / jQuery / PHP
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  担当：All
+                </li>
+              </ul>
+            </a>
           </div>
 
           <div class="portfolio-container--flexwrapper__contents">
-            <div class="portfolio-container--flexwrapper__contents__img"></div>
-            <p class="portfolio-container--flexwrapper__contents__text"></p>
+            <a href="">
+              <div class="portfolio-container--flexwrapper__contents__img">
+                <img src="assets/img/assignment_sass.png" alt="Sassを使用したダイビングサイト">
+              </div>
+              <h3 class="portfolio-container--flexwrapper__contents__title">沖縄本島ダイビングサイト</h3>
+              <ul>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  レスポンシブ対応
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  Sass / Gulpを使用した共同サイト制作
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  言語：HTML / CSS
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  担当：HTML / CSS（詳細エリアページ）
+                </li>
+              </ul>
+            </a>
           </div>
 
           <div class="portfolio-container--flexwrapper__contents">
-            <div class="portfolio-container--flexwrapper__contents__img"></div>
-            <p class="portfolio-container--flexwrapper__contents__text"></p>
+            <a href="">
+              <div class="portfolio-container--flexwrapper__contents__img">
+                <img src="assets/img/assignment_bootstrap.png" alt="Bootstrapを使用したサイト">
+              </div>
+              <h3 class="portfolio-container--flexwrapper__contents__title">Bootstrap共同制作</h3>
+              <ul>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  レスポンシブ対応
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  Bootstrapを使用したサイト制作
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  言語：HTML / CSS
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  担当：HTML / CSS（header & footer）
+                </li>
+              </ul>
+            </a>
           </div>
 
           <div class="portfolio-container--flexwrapper__contents">
-            <div class="portfolio-container--flexwrapper__contents__img"></div>
-            <p class="portfolio-container--flexwrapper__contents__text"></p>
+            <a href="">
+              <div class="portfolio-container--flexwrapper__contents__img">
+                <img src="assets/img/assgnment_html_css.png" alt="プロフィールサイト">
+              </div>
+              <h3 class="portfolio-container--flexwrapper__contents__title">プロフィールサイト制作</h3>
+              <ul>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  レスポンシブ対応
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  1ヶ月時点のプロフィールサイト
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  言語：HTML / CSS
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  担当：ALL
+                </li>
+              </ul>
+            </a>
           </div>
 
           <div class="portfolio-container--flexwrapper__contents">
-            <div class="portfolio-container--flexwrapper__contents__img"></div>
-            <p class="portfolio-container--flexwrapper__contents__text"></p>
+            <a href="">
+              <div class="portfolio-container--flexwrapper__contents__img">
+                <img src="assets/img/typing_javascript.png" alt="タイピングゲーム">
+              </div>
+              <h3 class="portfolio-container--flexwrapper__contents__title">タイピングゲーム制作</h3>
+              <ul>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  レスポンシブ対応なし
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  JavaScriptを使用したタイピングゲーム制作
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  言語：HTML / CSS / JavaScript
+                </li>
+                <li class="portfolio-container--flexwrapper__contents__text">
+                  担当：ALL
+                </li>
+              </ul>
+            </a>
           </div>
         </div>
       </div>
@@ -132,10 +249,10 @@
   </main>
 
   <form>
-    <div class="contact-container">
+    <div class="contact-container" id="Contact">
       <h2 class="contact-container--title">Contact</h2>
-      <p class="contact-container--text">ご依頼等は下記よりお問い合わせください<br>下記のボタンから直接メールが送れます</p>
-      <div class="contact-container--form">
+      <p class="contact-container--text fade_off" id="contact">ご依頼等は下記よりお問い合わせください<br>下記のボタンから直接メールが送れます</p>
+      <div class="contact-container--form fade_off" id="contactmail">
         <div class="contact-container--form__mailbox">
           <a href="mailto:fu38.terada@gmail.com" class="contact-container--form__btn">Open Apps<span>Mail</span></a>
         </div>
@@ -144,6 +261,8 @@
   </form>
 
   <footer>
+    <div class="page_top"><a href="#" class="page_top--btn"></a>
+    </div>
     <div id="footer" class="footer-wrapper">
       <div class="copywrite footer-wrapper--left">
         <a href="https://fontmeme.com/ja/font-signature/"><img src="https://fontmeme.com/permalink/190906/d134adc2eac6a1da18c8e992a18b02a5.png" alt="font-signature"></a>
@@ -152,13 +271,14 @@
       <div class="sns footer-wrapper--right">
         <p>Follow Me<span>:</span></p>
         <ul class="sns-icons">
-          <li class="sns-icon"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="sns-icon"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li class="sns-icon"><a href="https://www.facebook.com/fumiya.terada" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="sns-icon"><a href="https://www.instagram.com/238t_da" target="_blank"><i class="fab fa-instagram"></i></a></li>
           <li class="sns-icon"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
         </ul>
       </div>
     </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

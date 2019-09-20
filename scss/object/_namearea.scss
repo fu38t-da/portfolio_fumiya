@@ -65,26 +65,38 @@
 
   .menu-contents{
     position: absolute;
-    bottom: 30px;
-    right: 0;
-    padding: 10px;
+    bottom: 10px;
+    right: 10px;
+    // padding-top: 30px;
 
     .menu-content{
+      position: relative;
       font-size: 20px;
       letter-spacing: 3px;
       padding: 10px;
-      cursor: pointer;
+      color: #535252;
+      text-decoration: none;
 
-      &:hover {
-        background-color: rgba(#240461,.1);
+      &::before {
+        position: absolute;
+        content: '';
+        left: -30px;
+        top: 55%;
+        height: 2px;
+        width: 120%;
+        background-color: #535252;
+        transform: scale(0.1, 1);
+        transform-origin: left top;
+        transition: transform .5s;
       }
 
-      .line {
-        padding-right: 10px;
+      &:hover::before {
+        transform: scale(1,1);
       }
     }
   }
 }
+
 
 // メディアクエリ 768px以下
 @media screen and (max-width: 768px) {
